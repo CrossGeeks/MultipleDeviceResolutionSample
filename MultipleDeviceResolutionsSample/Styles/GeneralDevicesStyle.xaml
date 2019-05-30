@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="MultipleDeviceResolutionsSample.GeneralDevicesStyle">
+   
+        <OnIdiom  x:TypeArguments="x:Double" Tablet="30" Phone="20" x:Key="PageSpacing" />
+        <OnIdiom  x:TypeArguments="Thickness" Tablet="30" Phone="20" x:Key="PagePadding" />
+    
+         <Style TargetType="Button" x:Key="MainButtonStyle">
+             <Setter Property="HeightRequest">
+                <Setter.Value>
+                  <OnIdiom x:TypeArguments="x:Double" Phone="40" Tablet="60"/>
+                </Setter.Value>
+             </Setter>
+             <Setter Property="FontSize">
+                <Setter.Value>
+                  <OnIdiom x:TypeArguments="x:Double" Phone="15" Tablet="24"/>
+                </Setter.Value>
+             </Setter>
+           <Setter Property="CornerRadius" Value="20" />
+           <Setter Property="FontAttributes" Value="Bold" />
+           <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+           <Setter Property="TextColor" Value="White" />
+           <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+      </Style>
+    
+     <Style TargetType="Entry" x:Key="MainEntryStyle">
+            <Setter Property="HeightRequest">
+                <Setter.Value>
+                  <OnIdiom x:TypeArguments="x:Double" Phone="40" Tablet="60"/>
+                </Setter.Value>
+             </Setter>
+             <Setter Property="FontSize">
+                <Setter.Value>
+                  <OnIdiom x:TypeArguments="x:Double" Phone="15" Tablet="24"/>
+                </Setter.Value>
+             </Setter>
+           <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+           <Setter Property="TextColor" Value="{StaticResource Primary}"/>
+           <Setter Property="PlaceholderColor" Value="Gray" />
+      </Style>
+    
+    <Style TargetType="Label" x:Key="MainTitleStyle">
+             <Setter Property="FontSize">
+                <Setter.Value>
+                  <OnIdiom x:TypeArguments="x:Double" Phone="18" Tablet="24"/>
+                </Setter.Value>
+             </Setter>
+           <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+      </Style>
+    
+    <Style TargetType="Label" x:Key="NormalTitleStyle">
+             <Setter Property="FontSize">
+                <Setter.Value>
+                  <OnIdiom x:TypeArguments="x:Double" Phone="15" Tablet="19"/>
+                </Setter.Value>
+             </Setter>
+           <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+      </Style>
+    
+</ResourceDictionary>

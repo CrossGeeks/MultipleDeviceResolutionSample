@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="MultipleDeviceResolutionsSample.SmallDevicesStyle">
+        
+    <OnPlatform  x:TypeArguments="x:Double" iOS="10" Android="10" x:Key="PageSpacing" />
+    <OnPlatform  x:TypeArguments="Thickness" iOS="10" Android="10" x:Key="PagePadding" />
+    
+    <Style TargetType="Button" x:Key="MainButtonStyle">
+           <Setter Property="HeightRequest" Value="35"/>
+           <Setter Property="FontSize" Value="13"/>
+           <Setter Property="CornerRadius" Value="15" />
+           <Setter Property="FontAttributes" Value="Bold" />
+           <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+           <Setter Property="TextColor" Value="White" />
+           <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+    </Style>
+    
+     <Style TargetType="Entry" x:Key="MainEntryStyle">
+           <Setter Property="HeightRequest" Value="35"/>
+           <Setter Property="FontSize" Value="13"/>
+           <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+           <Setter Property="TextColor" Value="{StaticResource Primary}"/>
+           <Setter Property="PlaceholderColor" Value="Gray" />
+      </Style>
+    
+     <Style TargetType="Label" x:Key="MainTitleStyle">
+           <Setter Property="FontSize" Value="17"/>
+           <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+      </Style>
+    
+    <Style TargetType="Label" x:Key="NormalTitleStyle">
+           <Setter Property="FontSize" Value="13"/>
+           <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+      </Style>
+    
+</ResourceDictionary>

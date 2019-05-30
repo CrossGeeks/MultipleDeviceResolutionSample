@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="MultipleDeviceResolutionsSample.MainPage">
+   <ScrollView>
+    <StackLayout Padding="{StaticResource PagePadding}"
+                 VerticalOptions="CenterAndExpand"
+                 Spacing="{StaticResource PageSpacing}">
+            
+         <Label Text="Welcome to Xamarin.Forms!" 
+                Style="{StaticResource MainTitleStyle}"/>
+            
+        <Entry Placeholder="Name"
+               Style="{StaticResource MainEntryStyle}"/>
+            
+        <Entry Placeholder="Email"
+               Style="{StaticResource MainEntryStyle}"/>
+            
+        <Entry Placeholder="Phone Number"
+               Style="{StaticResource MainEntryStyle}"/>
+            
+         <Entry Placeholder="Confirm Password"
+                 IsPassword="true"
+                 Style="{StaticResource MainEntryStyle}"/>
+            
+        <Entry Placeholder="Password"
+               IsPassword="true"
+               Style="{StaticResource MainEntryStyle}"/>
+       
+        <Button Text="Login" 
+                 Style="{StaticResource MainButtonStyle}"/>
+            
+        <Label Text="Forgot Password" 
+               Style="{StaticResource NormalTitleStyle}"
+               TextColor="{StaticResource Primary}" />
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

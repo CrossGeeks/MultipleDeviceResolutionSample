@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="MultipleDeviceResolutionsSample.App">
+    <Application.Resources>
+        <ResourceDictionary x:Name="dictionary">
+            <Color x:Key="Primary">#6200EE</Color>
+            <Color x:Key="Secondary">#3700B3</Color>
+            <Color x:Key="Accent">#03DAC6</Color>
+            <Color x:Key="Light">White</Color>
+        </ResourceDictionary>
+     </Application.Resources>
+</Application>
